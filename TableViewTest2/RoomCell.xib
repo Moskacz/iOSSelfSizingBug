@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7519.1" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7513.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="65" id="nPx-ci-HOb" customClass="RoomCell" customModule="TableViewTest2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="261" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nPx-ci-HOb" id="G6e-tQ-cqK">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RoomName" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8m-3k-aaN">
+                        <rect key="frame" x="16" y="22" width="162" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="248" verticalHuggingPriority="251" text="20.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ml7-WW-MdW">
+                        <rect key="frame" x="194" y="22" width="34" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="34" id="DXu-6y-YQt"/>
+                            <constraint firstAttribute="width" constant="34" id="s9j-qe-BYn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="DXu-6y-YQt"/>
+                            </mask>
+                        </variation>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ml7-WW-MdW" firstAttribute="leading" secondItem="Y8m-3k-aaN" secondAttribute="trailing" constant="16" id="VZ6-oX-3fn"/>
+                    <constraint firstAttribute="bottom" secondItem="Y8m-3k-aaN" secondAttribute="bottom" constant="21" id="Vqq-fB-fHf"/>
+                    <constraint firstItem="Y8m-3k-aaN" firstAttribute="leading" secondItem="G6e-tQ-cqK" secondAttribute="leading" constant="16" id="ZWH-Cf-SIk"/>
+                    <constraint firstItem="Y8m-3k-aaN" firstAttribute="top" secondItem="G6e-tQ-cqK" secondAttribute="top" constant="22" id="dBZ-Dw-j5D"/>
+                    <constraint firstItem="Ml7-WW-MdW" firstAttribute="top" secondItem="G6e-tQ-cqK" secondAttribute="top" constant="22" id="g51-HK-GJO"/>
+                    <constraint firstAttribute="trailing" secondItem="Ml7-WW-MdW" secondAttribute="trailing" id="k3w-7O-QdK"/>
+                    <constraint firstAttribute="bottom" secondItem="Ml7-WW-MdW" secondAttribute="bottom" constant="21" id="zig-uq-h41"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="roomName" destination="Y8m-3k-aaN" id="GtP-fk-Id7"/>
+                <outlet property="temperature" destination="Ml7-WW-MdW" id="ZDs-uN-mAr"/>
+            </connections>
+            <point key="canvasLocation" x="244.5" y="420.5"/>
+        </tableViewCell>
+    </objects>
+</document>
